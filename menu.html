@@ -89,22 +89,30 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
+  <link href="style.css" rel="stylesheet"/>
+</head>
 <body class="bg-surface font-body text-on-surface">
 <!-- TopAppBar -->
-<header class="bg-[#f9f9f9]/80 dark:bg-[#111111]/80 backdrop-blur-md docked full-width top-0 z-50 sticky shadow-sm opacity-10 dark:shadow-none">
-<div class="flex justify-between items-center w-full px-6 py-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-[#111111] dark:text-[#eeeeee]">menu</span>
-<h1 class="text-xl font-bold tracking-tighter text-[#111111] dark:text-[#eeeeee] font-headline">LEFTERIS</h1>
+<header class="site-header sticky top-0 z-50 w-full bg-[#f9f9f9]/90 dark:bg-[#111111]/90 backdrop-blur-md shadow-sm">
+<div class="px-6 py-4">
+<div class="flex items-center justify-between gap-4">
+<a class="text-xl font-bold tracking-tighter text-[#111111] dark:text-[#eeeeee] font-headline" href="index.html">LEFTERIS</a>
+<nav class="hidden md:flex items-center gap-8" aria-label="Κύρια πλοήγηση">
+<a class="nav-link " href="index.html">Αρχική</a>
+<a class="nav-link " href="about.html">Σχετικά</a>
+<a class="nav-link nav-link-active" href="menu.html">Μενού</a>
+<a class="nav-link " href="contact.html">Επικοινωνία</a>
+</nav>
+<button class="md:hidden text-[#111111] dark:text-[#eeeeee]" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-toggle>
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-[#a23f00] dark:text-[#fc7127] font-medium transition-opacity hover:opacity-80" href="#">Menu</a>
-<a class="text-[#111111] dark:text-[#eeeeee] font-medium transition-opacity hover:opacity-80" href="#">Order</a>
-<a class="text-[#111111] dark:text-[#eeeeee] font-medium transition-opacity hover:opacity-80" href="#">Track</a>
-<a class="text-[#111111] dark:text-[#eeeeee] font-medium transition-opacity hover:opacity-80" href="#">Location</a>
-</div>
-<span class="material-symbols-outlined text-[#a23f00] dark:text-[#fc7127]">call</span>
+<nav class="mobile-menu hidden md:hidden mt-4 border-t border-outline-variant/30 pt-4" id="mobile-menu" aria-label="Κινητή πλοήγηση">
+<a class="mobile-nav-link " href="index.html">Αρχική</a>
+<a class="mobile-nav-link " href="about.html">Σχετικά</a>
+<a class="mobile-nav-link mobile-nav-link-active" href="menu.html">Μενού</a>
+<a class="mobile-nav-link " href="contact.html">Επικοινωνία</a>
+</nav>
 </div>
 </header>
 <main class="min-h-screen">
@@ -241,35 +249,15 @@
 </div>
 </div>
 </div>
-<button class="mt-12 w-full bg-primary text-on-primary py-5 rounded-lg font-headline font-bold flex items-center justify-center gap-3 hover:bg-secondary transition-all active:scale-[0.98]">
+<a class="mt-12 w-full bg-primary text-on-primary py-5 rounded-lg font-headline font-bold flex items-center justify-center gap-3 hover:bg-secondary transition-all active:scale-[0.98]" href="contact.html">
                         BUILD YOUR WRAP
                         <span class="material-symbols-outlined">arrow_forward</span>
-</button>
+</a>
 </div>
 </section>
 </div>
 </main>
-<!-- BottomNavBar (Mobile) -->
-<nav class="md:hidden bg-[#f9f9f9]/90 dark:bg-[#111111]/90 backdrop-blur-xl docked full-width bottom-0 z-50 fixed rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-none">
-<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-6">
-<a class="flex flex-col items-center justify-center text-[#a23f00] dark:text-[#fc7127] font-black scale-90 transition-all duration-200" href="#">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
-<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Menu</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors" href="#">
-<span class="material-symbols-outlined">shopping_cart</span>
-<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Order</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors" href="#">
-<span class="material-symbols-outlined">local_shipping</span>
-<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Track</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors" href="#">
-<span class="material-symbols-outlined">location_on</span>
-<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Location</span>
-</a>
-</div>
-</nav>
+
 <!-- Footer -->
 <footer class="bg-[#111111] full-width py-24 px-6 text-center text-[#e2e2e2]">
 <div class="max-w-4xl mx-auto flex flex-col items-center space-y-12">
@@ -292,4 +280,5 @@
             </p>
 </div>
 </footer>
+<script src="script.js"></script>
 </body></html>
