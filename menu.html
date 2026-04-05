@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="el"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary-fixed-variant": "#7c2e00",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2f3131",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-primary-fixed": "#1b1c1c",
+                    "surface-container": "#eeeeee",
+                    "tertiary-fixed": "#e4e4cc",
+                    "primary-container": "#262626",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f9f9f9",
+                    "on-primary-container": "#8e8d8c",
+                    "secondary-fixed-dim": "#ffb595",
+                    "on-surface": "#1a1c1c",
+                    "surface-tint": "#5f5e5e",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "primary": "#111111",
+                    "tertiary": "#111205",
+                    "primary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "surface-container-high": "#e8e8e8",
+                    "outline": "#747878",
+                    "surface-container-low": "#f3f3f3",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-error-container": "#93000a",
+                    "secondary": "#a23f00",
+                    "on-secondary-container": "#5c2000",
+                    "on-background": "#1a1c1c",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-dim": "#dadada",
+                    "surface": "#f9f9f9",
+                    "secondary-container": "#fc7127",
+                    "on-tertiary-container": "#8d8f79",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-fixed": "#351000",
+                    "tertiary-container": "#252717",
+                    "on-surface-variant": "#444748"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9f9]/80 dark:bg-[#111111]/80 backdrop-blur-md docked full-width top-0 z-50 sticky shadow-sm opacity-10 dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#111111] dark:text-[#eeeeee]">menu</span>
+<h1 class="text-xl font-bold tracking-tighter text-[#111111] dark:text-[#eeeeee] font-headline">LEFTERIS</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#a23f00] dark:text-[#fc7127] font-medium transition-opacity hover:opacity-80" href="#">Menu</a>
+<a class="text-[#111111] dark:text-[#eeeeee] font-medium transition-opacity hover:opacity-80" href="#">Order</a>
+<a class="text-[#111111] dark:text-[#eeeeee] font-medium transition-opacity hover:opacity-80" href="#">Track</a>
+<a class="text-[#111111] dark:text-[#eeeeee] font-medium transition-opacity hover:opacity-80" href="#">Location</a>
+</div>
+<span class="material-symbols-outlined text-[#a23f00] dark:text-[#fc7127]">call</span>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative h-[353px] flex items-end px-6 pb-12 overflow-hidden bg-primary overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-60">
+<img alt="Greek Grill" class="w-full h-full object-cover" data-alt="Close-up of traditional Greek souvlaki skewers grilling over glowing charcoal embers with wisps of smoke and intense heat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_1w4ubKFHF1mLowtXiUGi6zduSDsQoA7w8e97M7PF6JKM9uvWqZmSb3S0C0u8i9qfy4fX75fyVF196x8xtptZFgmPHpfEzV81fCXvIRmoSTs_noAJYtSCa4ZHgdcw9hSmg9C8ZDcSwEnQLgjx7V8J4NcJP8a5FbMryMH7usCuQmopdhRyazFB7uMhlGk_NFtmZfyA7rIKFQ020G43bcZetNoIuhom0FkA5miZDl_lS97rM9ux9CySpBZAjs4v2-eKaj5hvaz5PWU"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent z-1"></div>
+<div class="relative z-10 max-w-4xl">
+<span class="text-secondary font-black uppercase tracking-[0.2em] text-xs mb-2 block">Authentic Greek Street Food</span>
+<h2 class="text-5xl md:text-7xl font-headline font-bold text-surface-container-lowest leading-none tracking-tight">THE MENU</h2>
+</div>
+</section>
+<!-- Menu Navigation (Tabs) -->
+<nav class="sticky top-16 bg-surface z-40 px-6 py-6 border-b border-outline-variant/10">
+<div class="flex gap-8 overflow-x-auto no-scrollbar pb-2">
+<a class="whitespace-nowrap font-headline font-bold text-lg border-b-2 border-secondary pb-1" href="#kalamakia">Καλαμάκια</a>
+<a class="whitespace-nowrap font-headline font-bold text-lg text-on-surface-variant hover:text-secondary transition-colors" href="#tylixta">Τυλιχτά</a>
+<a class="whitespace-nowrap font-headline font-bold text-lg text-on-surface-variant hover:text-secondary transition-colors" href="#sides">Συνοδευτικά</a>
+<a class="whitespace-nowrap font-headline font-bold text-lg text-on-surface-variant hover:text-secondary transition-colors" href="#drinks">Ποτά</a>
+</div>
+</nav>
+<!-- Menu Content -->
+<div class="px-6 py-12 space-y-24 max-w-5xl mx-auto">
+<!-- Category: Kalamakia -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12" id="kalamakia">
+<div class="md:col-span-4">
+<h3 class="text-4xl font-headline font-bold text-primary tracking-tight mb-4">Καλαμάκια</h3>
+<p class="text-on-surface-variant leading-relaxed">The heart of our craft. Hand-cut, marinated for 24 hours, and grilled over natural oak charcoal.</p>
+</div>
+<div class="md:col-span-8 space-y-1">
+<!-- Item -->
+<div class="group flex justify-between items-baseline py-6 hover:bg-surface-container-low px-4 transition-colors rounded-lg">
+<div class="flex flex-col">
+<span class="text-2xl font-headline font-semibold text-primary">Χοιρινό</span>
+<span class="text-sm text-on-surface-variant italic">Traditional Pork Skewer</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-2xl font-headline font-bold text-secondary">€2.20</span>
+<button class="bg-primary text-on-primary w-10 h-10 flex items-center justify-center rounded-lg hover:bg-secondary transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+</div>
+<!-- Item -->
+<div class="group flex justify-between items-baseline py-6 hover:bg-surface-container-low px-4 transition-colors rounded-lg">
+<div class="flex flex-col">
+<span class="text-2xl font-headline font-semibold text-primary">Κοτόπουλο</span>
+<span class="text-sm text-on-surface-variant italic">Juicy Chicken Skewer</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-2xl font-headline font-bold text-secondary">€2.40</span>
+<button class="bg-primary text-on-primary w-10 h-10 flex items-center justify-center rounded-lg hover:bg-secondary transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+</div>
+<!-- Item -->
+<div class="group flex justify-between items-baseline py-6 hover:bg-surface-container-low px-4 transition-colors rounded-lg">
+<div class="flex flex-col">
+<span class="text-2xl font-headline font-semibold text-primary">Μπιφτέκι</span>
+<span class="text-sm text-on-surface-variant italic">Hand-kneaded Beef Burger Skewer</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-2xl font-headline font-bold text-secondary">€2.30</span>
+<button class="bg-primary text-on-primary w-10 h-10 flex items-center justify-center rounded-lg hover:bg-secondary transition-colors active:scale-95">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Featured Section -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="md:col-span-2 bg-primary-container p-8 rounded-xl flex flex-col justify-between text-surface-container-lowest h-64 relative overflow-hidden">
+<div class="z-10">
+<span class="text-secondary font-bold uppercase text-[10px] tracking-widest">Master Grill</span>
+<h4 class="text-3xl font-headline font-bold mt-2">The Legacy of<br/>Fire &amp; Salt</h4>
+</div>
+<p class="text-sm opacity-60 z-10 max-w-xs">Since 1974, we remain faithful to the same simple recipe: quality meat, perfect salt, and high heat.</p>
+<div class="absolute right-[-20%] bottom-[-20%] w-64 h-64 opacity-20">
+<span class="material-symbols-outlined text-[12rem]">local_fire_department</span>
+</div>
+</div>
+<div class="bg-secondary-container p-8 rounded-xl flex flex-col justify-end text-white h-64">
+<h4 class="text-2xl font-headline font-black leading-tight">FRESH<br/>EVERY DAY</h4>
+<p class="text-xs mt-2 opacity-90 uppercase tracking-tighter">Sourced from local farms</p>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-xl h-64 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">restaurant</span>
+<span class="text-lg font-headline font-bold text-primary">DINE IN</span>
+<p class="text-xs text-on-surface-variant mt-2">Experience the smoke firsthand at our store.</p>
+</div>
+</section>
+<!-- Category: Tylitka -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12" id="tylixta">
+<div class="md:col-span-4 order-last md:order-first">
+<div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden shadow-sm">
+<img alt="Souvlaki Wrap" class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-500" data-alt="Artistic high-angle shot of a wrapped Greek souvlaki in parchment paper, showing colorful tomatoes, onions, and succulent meat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy-6ZVX4ldxpuhDz5tPWj_Bc8Ybgqi2L3IoBSaZsEiDxU8USBs5jQLCcH3sTBokX55IHuPKi8CV026KHjsXkbcDhnO1hnZvn6YuaPrVslBrgvdGnMHwDK-rLVpjana3S-AGioFU_m8fs0iGaoAByFLMBLOnJxBRPvqk7blTokDypxjN8CIfhdX33tIvGJRyT1NpBL9V0VqwiS-eLKnLSO8khwvrKBrjKn0MOwbopXUNrTw2alAFovGRARaeoelYSqLKguIZ-Cs0io"/>
+</div>
+</div>
+<div class="md:col-span-8">
+<div class="flex items-center justify-between mb-8 border-b-2 border-primary pb-4">
+<h3 class="text-4xl font-headline font-bold text-primary tracking-tight">Τυλιχτά</h3>
+<span class="text-sm font-bold text-secondary uppercase tracking-widest">Starting from €3.80</span>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 group cursor-pointer">
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<h5 class="text-xl font-headline font-bold group-hover:text-secondary transition-colors">The Classic Wrap</h5>
+<span class="font-headline font-bold">€3.80</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-2">Pork or chicken skewer, fresh tomato, red onion, golden fries, and our signature tzatziki in a warm pita.</p>
+</div>
+</div>
+<div class="flex gap-6 group cursor-pointer">
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<h5 class="text-xl font-headline font-bold group-hover:text-secondary transition-colors">The Bifteki Wrap</h5>
+<span class="font-headline font-bold">€4.10</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-2">Grilled beef burger, yogurt sauce, paprika, fresh parsley, and thinly sliced onions.</p>
+</div>
+</div>
+<div class="flex gap-6 group cursor-pointer">
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<h5 class="text-xl font-headline font-bold group-hover:text-secondary transition-colors">Vegan Pita Special</h5>
+<span class="font-headline font-bold">€3.50</span>
+</div>
+<p class="text-on-surface-variant text-sm mt-2">Double grilled pita with fresh vegetable mix, lemon-olive oil dressing, and oregano-salted fries.</p>
+</div>
+</div>
+</div>
+<button class="mt-12 w-full bg-primary text-on-primary py-5 rounded-lg font-headline font-bold flex items-center justify-center gap-3 hover:bg-secondary transition-all active:scale-[0.98]">
+                        BUILD YOUR WRAP
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden bg-[#f9f9f9]/90 dark:bg-[#111111]/90 backdrop-blur-xl docked full-width bottom-0 z-50 fixed rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-none">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-6">
+<a class="flex flex-col items-center justify-center text-[#a23f00] dark:text-[#fc7127] font-black scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Order</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[11px] font-bold uppercase tracking-widest Plus Jakarta Sans">Location</span>
+</a>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="bg-[#111111] full-width py-24 px-6 text-center text-[#e2e2e2]">
+<div class="max-w-4xl mx-auto flex flex-col items-center space-y-12">
+<h2 class="text-2xl font-black text-white font-headline tracking-tighter">LEFTERIS</h2>
+<div class="flex flex-wrap justify-center gap-8 text-sm font-medium">
+<a class="text-[#e2e2e2] opacity-50 hover:text-[#fc7127] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#e2e2e2] opacity-50 hover:text-[#fc7127] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#e2e2e2] opacity-50 hover:text-[#fc7127] transition-colors" href="#">Nutrition Info</a>
+</div>
+<div class="flex gap-6">
+<div class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span>
+</div>
+<div class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+<p class="text-[10px] tracking-widest uppercase opacity-40">
+                © 2024 SOUVLAKIA O LEFTERIS. AUTHENTIC GREEK STREET FOOD.
+            </p>
+</div>
+</footer>
+</body></html>

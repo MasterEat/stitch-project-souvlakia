@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary-fixed-variant": "#7c2e00",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2f3131",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-primary-fixed": "#1b1c1c",
+                    "surface-container": "#eeeeee",
+                    "tertiary-fixed": "#e4e4cc",
+                    "primary-container": "#262626",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f9f9f9",
+                    "on-primary-container": "#8e8d8c",
+                    "secondary-fixed-dim": "#ffb595",
+                    "on-surface": "#1a1c1c",
+                    "surface-tint": "#5f5e5e",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffdbcd",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "primary": "#111111",
+                    "tertiary": "#111205",
+                    "primary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "surface-container-high": "#e8e8e8",
+                    "outline": "#747878",
+                    "surface-container-low": "#f3f3f3",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-error-container": "#93000a",
+                    "secondary": "#a23f00",
+                    "on-secondary-container": "#5c2000",
+                    "on-background": "#1a1c1c",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-dim": "#dadada",
+                    "surface": "#f9f9f9",
+                    "secondary-container": "#fc7127",
+                    "on-tertiary-container": "#8d8f79",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-fixed": "#351000",
+                    "tertiary-container": "#252717",
+                    "on-surface-variant": "#444748"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .grill-grain {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary selection:text-on-secondary">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9f9]/80 dark:bg-[#111111]/80 backdrop-blur-md docked full-width top-0 z-50 sticky shadow-sm opacity-10 dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#a23f00] dark:text-[#fc7127]">menu</span>
+<span class="text-xl font-bold tracking-tighter text-[#111111] dark:text-[#eeeeee] font-headline uppercase">LEFTERIS</span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#262626] font-medium text-sm hover:opacity-80 transition-opacity font-label" href="#">Menu</a>
+<a class="text-[#a23f00] font-bold text-sm transition-all font-label" href="#">About</a>
+<a class="text-[#262626] font-medium text-sm hover:opacity-80 transition-opacity font-label" href="#">Location</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#a23f00] dark:text-[#fc7127]">call</span>
+<button class="bg-primary text-on-primary px-4 py-2 text-xs font-bold font-label uppercase tracking-widest transition-transform active:scale-95">Order Now</button>
+</div>
+</div>
+</header>
+<main class="relative overflow-hidden">
+<div class="absolute inset-0 grill-grain"></div>
+<!-- Hero: The Story -->
+<section class="relative min-h-[707px] flex items-center px-6 md:px-12 py-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 w-full max-w-7xl mx-auto items-center">
+<div class="md:col-span-6 z-10">
+<span class="text-secondary font-label font-bold uppercase tracking-[0.3em] text-xs mb-4 block">SINCE 1980</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-primary tracking-tighter leading-[0.9] mb-8">
+                        The Story of <br/> <span class="text-secondary">Authentic</span> Fire.
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-lg font-body">
+                        Forty years ago, in the heart of Kallithea, Lefteris lit a small charcoal grill. What started as a simple neighborhood corner became a monument to the perfect souvlaki. No frills, no secrets—just the best meat and the right heat.
+                    </p>
+</div>
+<div class="md:col-span-6 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-highest shadow-2xl relative">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="vintage black and white photo of a traditional greek grill with smoke rising and charcoal glowing in a rustic kitchen setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZsOJZySTtrJzw0mLTo0E35PYFu6vYrZnc_7sSMsS7KI658mXIWjPdBUXu7LegrxCrma_cpKDCMSjzGV29gRVt6lKTEJ8yRHbNpK_fbinqFIgdJ6Ks56Y9A0ZJWzBL_kUFpTh7ZPAJLRKICtPwZgnFyJF5H9O2XrpByDa5fiYwezSs4grtTnLq4mS04DaRGyuxGBGOazRp-3YBJWLS2QzhzdY2sfFmPwnd4k0irRvYCrOqm3dNAFKiQdYWngL4-Kwh4VgyBDBO9Xg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary p-8 hidden md:block max-w-[200px]">
+<p class="text-on-secondary font-headline font-bold text-4xl leading-tight">40+ YEARS</p>
+<p class="text-on-secondary/80 font-label text-xs uppercase tracking-widest mt-2">Of Pure Tradition</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Neighborhood: Bento Grid -->
+<section class="bg-surface-container-low py-24 px-6 md:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary mb-4">Our Neighborhood</h2>
+<p class="text-on-surface-variant text-lg">Kallithea isn't just where we work; it's our soul. We've seen generations grow up around our counter.</p>
+</div>
+<div class="h-px flex-grow bg-outline-variant/30 mx-12 hidden md:block mb-4"></div>
+<span class="font-headline text-8xl font-black text-surface-container-highest opacity-50 leading-none">01</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest p-1 rounded-xl overflow-hidden group">
+<div class="relative h-full w-full overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="cinematic wide shot of a bustling narrow street in kallithea greece at dusk with warm glowing window lights and traditional balconies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_gXMIkE-hQM3fOIbgYcYKZD7zrP84Kl8Z-xf6TzdKyclk_t0fQ1hD2M7t67zRMa1wRrKIRSaHHxBdvNWfzToTjzr7lWHAFa0jNvWp7NK7HxtYo-dc2eJLADS_SdwdCMX6QNd1mt3FnQeFsBO5nTloAN_pu9wVTA2-eXUZaNe-YU3jY3WzYYO5mKadAsUV2TyYMjb8lt3tix8DPV_zRoYJW2LrsmJl1tSviS9PDuvFXA1s0yVCeX3C7FexM0PDjWpnWLhIWla2yF8"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white font-headline text-3xl font-bold">The Kallithea Spirit</h3>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">location_on</span>
+<h3 class="font-headline text-2xl font-bold mb-3">Legacy of the Corner</h3>
+<p class="text-on-surface-variant leading-relaxed">Located on the same busy corner since day one, we've remained the constant pulse of the local community, serving simple food to hard-working people.</p>
+</div>
+<div class="md:col-span-1 bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between">
+<p class="font-label text-xs uppercase tracking-widest opacity-60">Established</p>
+<p class="font-headline text-5xl font-bold">1980</p>
+</div>
+<div class="md:col-span-1 bg-secondary text-on-secondary p-8 rounded-xl flex flex-col justify-between">
+<p class="font-label text-xs uppercase tracking-widest opacity-80">Daily Orders</p>
+<p class="font-headline text-5xl font-bold">500+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality First: Minimalist Editorial -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<div class="space-y-12">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">potted_plant</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Prime Ingredients</h4>
+<p class="text-on-surface-variant">We source our pork and chicken from the same local butchers for over three decades. No shortcuts, no industrial processing.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">local_fire_department</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Hand-Stacked Skewers</h4>
+<p class="text-on-surface-variant">Every souvlaki is hand-cut and hand-stacked daily. The charcoal grill is the only way we cook, ensuring that smoky, legendary flavor.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">The Lefteris Standard</h4>
+<p class="text-on-surface-variant">If it's not good enough for our family, it's not good enough for our customers. Simplicity is the ultimate sophistication.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative group">
+<div class="absolute -inset-4 border border-outline-variant opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<img class="w-full relative z-10 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="extreme close-up of raw seasoned meat on wooden skewers with coarse sea salt and cracked black pepper in dramatic spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3sPMGZRcdcj0DTHkf9DndDAjH36lRrFWVOj6fPN2KaPBB97HqCa7W_RQcMVEJ4RWWmEmAtLcLQqvZAn3ExS61FNrwnObUrjjE37wX2yadxltzmyhMmV81Xg4Pi4ep_6lt6_OU7Eh4bzGU-6RKR5uUzMfdqzamaxiAeHmTnlQwwRZDs3bXftYIf6drAU2YcO7nDMGwVvgMKuvsmi05I1vSMtjA06N7WSx97IPrv_Xrp1Zull1DfYUHh19ZhpE99gS3CrV5YYW0vUY"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary py-20">
+<div class="max-w-4xl mx-auto text-center px-6">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-primary mb-8 tracking-tight">Taste the heritage tonight.</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-secondary text-on-secondary px-10 py-5 font-headline font-bold text-lg hover:opacity-90 transition-opacity">ORDER FOR DELIVERY</button>
+<button class="border border-white/20 text-white px-10 py-5 font-headline font-bold text-lg hover:bg-white/10 transition-colors">VIEW THE FULL MENU</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#111111] dark:bg-[#111111] full-width py-12 px-6">
+<div class="flex flex-col items-center text-center space-y-6 w-full">
+<div class="text-lg font-black text-white font-headline uppercase tracking-tighter">LEFTERIS</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#e2e2e2] opacity-50 hover:text-[#fc7127] transition-colors text-sm font-body" href="#">Privacy Policy</a>
+<a class="text-[#e2e2e2] opacity-50 hover:text-[#fc7127] transition-colors text-sm font-body" href="#">Terms of Service</a>
+<a class="text-[#e2e2e2] opacity-50 hover:text-[#fc7127] transition-colors text-sm font-body" href="#">Nutrition Info</a>
+</div>
+<div class="pt-8 border-t border-white/5 w-full max-w-2xl">
+<p class="text-xs tracking-widest uppercase text-[#fc7127] font-body opacity-80">© 2024 SOUVLAKIA O LEFTERIS. AUTHENTIC GREEK STREET FOOD.</p>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-[#f9f9f9]/90 dark:bg-[#111111]/90 backdrop-blur-xl z-50 flex justify-around items-center px-4 pt-3 pb-safe rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors group" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="text-[11px] font-bold uppercase tracking-widest font-label mt-1">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors group" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="text-[11px] font-bold uppercase tracking-widest font-label mt-1">Order</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#a23f00] dark:text-[#fc7127] font-black transition-all scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="local_shipping" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="text-[11px] uppercase tracking-widest font-label mt-1">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors group" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="text-[11px] font-bold uppercase tracking-widest font-label mt-1">Location</span>
+</a>
+</nav>
+</body></html>
