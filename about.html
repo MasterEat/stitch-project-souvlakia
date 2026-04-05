@@ -95,24 +95,30 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
+  <link href="style.css" rel="stylesheet"/>
+</head>
 <body class="bg-surface font-body text-on-surface selection:bg-secondary selection:text-on-secondary">
 <!-- TopAppBar -->
-<header class="bg-[#f9f9f9]/80 dark:bg-[#111111]/80 backdrop-blur-md docked full-width top-0 z-50 sticky shadow-sm opacity-10 dark:shadow-none">
-<div class="flex justify-between items-center w-full px-6 py-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-[#a23f00] dark:text-[#fc7127]">menu</span>
-<span class="text-xl font-bold tracking-tighter text-[#111111] dark:text-[#eeeeee] font-headline uppercase">LEFTERIS</span>
-</div>
-<nav class="hidden md:flex items-center space-x-8">
-<a class="text-[#262626] font-medium text-sm hover:opacity-80 transition-opacity font-label" href="#">Menu</a>
-<a class="text-[#a23f00] font-bold text-sm transition-all font-label" href="#">About</a>
-<a class="text-[#262626] font-medium text-sm hover:opacity-80 transition-opacity font-label" href="#">Location</a>
+<header class="site-header sticky top-0 z-50 w-full bg-[#f9f9f9]/90 dark:bg-[#111111]/90 backdrop-blur-md shadow-sm">
+<div class="px-6 py-4">
+<div class="flex items-center justify-between gap-4">
+<a class="text-xl font-bold tracking-tighter text-[#111111] dark:text-[#eeeeee] font-headline" href="index.html">LEFTERIS</a>
+<nav class="hidden md:flex items-center gap-8" aria-label="Κύρια πλοήγηση">
+<a class="nav-link " href="index.html">Αρχική</a>
+<a class="nav-link nav-link-active" href="about.html">Σχετικά</a>
+<a class="nav-link " href="menu.html">Μενού</a>
+<a class="nav-link " href="contact.html">Επικοινωνία</a>
 </nav>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-[#a23f00] dark:text-[#fc7127]">call</span>
-<button class="bg-primary text-on-primary px-4 py-2 text-xs font-bold font-label uppercase tracking-widest transition-transform active:scale-95">Order Now</button>
+<button class="md:hidden text-[#111111] dark:text-[#eeeeee]" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-toggle>
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
+<nav class="mobile-menu hidden md:hidden mt-4 border-t border-outline-variant/30 pt-4" id="mobile-menu" aria-label="Κινητή πλοήγηση">
+<a class="mobile-nav-link " href="index.html">Αρχική</a>
+<a class="mobile-nav-link mobile-nav-link-active" href="about.html">Σχετικά</a>
+<a class="mobile-nav-link " href="menu.html">Μενού</a>
+<a class="mobile-nav-link " href="contact.html">Επικοινωνία</a>
+</nav>
 </div>
 </header>
 <main class="relative overflow-hidden">
@@ -247,23 +253,6 @@
 </div>
 </div>
 </footer>
-<!-- BottomNavBar (Mobile only) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full bg-[#f9f9f9]/90 dark:bg-[#111111]/90 backdrop-blur-xl z-50 flex justify-around items-center px-4 pt-3 pb-safe rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)]">
-<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors group" href="#">
-<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
-<span class="text-[11px] font-bold uppercase tracking-widest font-label mt-1">Menu</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors group" href="#">
-<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-<span class="text-[11px] font-bold uppercase tracking-widest font-label mt-1">Order</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#a23f00] dark:text-[#fc7127] font-black transition-all scale-90" href="#">
-<span class="material-symbols-outlined" data-icon="local_shipping" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
-<span class="text-[11px] uppercase tracking-widest font-label mt-1">Track</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#262626] dark:text-[#e2e2e2] opacity-60 hover:text-[#fc7127] transition-colors group" href="#">
-<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
-<span class="text-[11px] font-bold uppercase tracking-widest font-label mt-1">Location</span>
-</a>
-</nav>
+
+<script src="script.js"></script>
 </body></html>

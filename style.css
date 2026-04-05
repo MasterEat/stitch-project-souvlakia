@@ -1,0 +1,39 @@
+.nav-link {
+  color: #262626;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.75;
+}
+
+.nav-link-active {
+  color: #a23f00;
+  font-weight: 700;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.65rem 0;
+  color: #262626;
+  font-weight: 500;
+}
+
+.mobile-nav-link-active {
+  color: #a23f00;
+  font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-link,
+  .mobile-nav-link {
+    color: #eeeeee;
+  }
+
+  .nav-link-active,
+  .mobile-nav-link-active {
+    color: #fc7127;
+  }
+}
